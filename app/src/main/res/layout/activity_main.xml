@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="35dp"
+    tools:context=".KonversiActivity">
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/etNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_masukkan_nilai_celcius"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/rbReamur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/str_reamur" />
+
+        <RadioButton
+            android:id="@+id/rbKelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/str_kelvin" />
+
+        <RadioButton
+            android:id="@+id/rbFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/str_fahrenheit" />
+    </RadioGroup>
+
+    <Button
+        android:onClick="konversikan"
+        android:id="@+id/btnKonversi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_konversikan" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil : 0" />
+
+</LinearLayout>
